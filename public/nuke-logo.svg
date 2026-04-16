@@ -1,0 +1,14 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Nuke circular badge with N -->
+  <circle cx="50" cy="50" r="48" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
+  
+  <!-- Stylized N for Nuke -->
+  <text x="50" y="65" font-size="56" font-weight="700" font-family="monospace" text-anchor="middle" fill="currentColor" letter-spacing="0.05em">N</text>
+  
+  <!-- Small dots for technical feel -->
+  <circle cx="20" cy="20" r="2" fill="currentColor" opacity="0.5"/>
+  <circle cx="80" cy="20" r="2" fill="currentColor" opacity="0.5"/>
+  <circle cx="20" cy="80" r="2" fill="currentColor" opacity="0.5"/>
+  <circle cx="80" cy="80" r="2" fill="currentColor" opacity="0.5"/>
+</svg>

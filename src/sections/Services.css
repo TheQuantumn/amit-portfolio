@@ -1,0 +1,92 @@
+.services {
+  padding: 100px 0;
+  color: #e9ecff;
+}
+
+.services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.services .eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: var(--text-tag);
+  color: #00f0ff;
+  text-align: center;
+}
+
+.services h2 {
+  margin: 0;
+  font-size: var(--text-h2);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.service-intro {
+  margin: 1.5rem auto 0;
+  opacity: 0.78;
+  line-height: 1.8;
+  font-size: var(--text-body);
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 28px;
+  padding: 32px;
+  min-height: 280px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 240, 255, 0.25);
+}
+
+.service-label {
+  display: inline-block;
+  font-size: var(--text-tag);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #00f0ff;
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  margin: 0 0 1rem;
+  font-size: var(--text-body);
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.service-details {
+  margin: 0;
+  opacity: 0.75;
+  line-height: 1.8;
+  font-size: var(--text-body);
+}
+
+@media (max-width: 1024px) {
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,25 @@
+.contact {
+  padding: 100px 0;
+  color: #e9ecff;
+}
+
+.contact .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin: 0 0 1.5rem;
+  font-size: var(--text-h2);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.contact p {
+  margin: 0;
+  opacity: 0.8;
+  line-height: 1.8;
+  font-size: var(--text-body);
+}

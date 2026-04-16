@@ -1,0 +1,111 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  overflow: hidden;
+  background: #0A0A0C;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(0, 240, 255, 0.12), transparent 25%),
+    radial-gradient(circle at 80% 20%, rgba(138, 43, 226, 0.14), transparent 18%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  width: 100%;
+  color: #f5f7ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.hero-tagline {
+  display: flex !important;
+  justify-content: center;
+  margin: 0 auto 1.2rem auto !important;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: var(--text-h1);
+  line-height: 1.1;
+  letter-spacing: 0.12em;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.hero-title {
+  margin-top: 18px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: #8A2BE2;
+  font-weight: 600;
+}
+
+.hero-subtitle {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+  width: 100%;
+  opacity: 0.85;
+  color: #cfd7ff;
+  letter-spacing: 0.12em;
+  font-size: var(--text-body-lg);
+}
+
+.hero-meta {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  width: 100%;
+}
+
+.hero-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.1rem;
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  color: #00F0FF;
+  border-radius: 999px;
+  font-size: var(--text-tag);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 16px;
+  }
+
+  .hero h1 {
+    font-size: var(--text-h1);
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-meta {
+    gap: 0.6rem;
+  }
+}
